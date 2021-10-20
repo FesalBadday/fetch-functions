@@ -1,0 +1,20 @@
+body {
+  background-color: #111111;
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+img:hover {
+  transform: scale(1.1);
+}
+
+figcaption {
+  color: #f8f8ff;
+  text-align: center;
+  font-size: 2rem;
+}
