@@ -1,4 +1,4 @@
-fetch('http://deckofcardsapi.com/api/deck/new')
+fetch('https://deckofcardsapi.com/api/deck/new')
   .then(function (response) {
     // JSON that is returned from the server must be converted to a JS object asynchronously.
     if (!response.ok) {
@@ -9,7 +9,7 @@ fetch('http://deckofcardsapi.com/api/deck/new')
 
   // load the cards
   .then(function (link) {
-    return fetch(`http://deckofcardsapi.com/api/deck/${link.deck_id}/draw/?count=52`)
+    return fetch(`https://deckofcardsapi.com/api/deck/${link.deck_id}/draw/?count=52`)
   })
 
   // return new json file
